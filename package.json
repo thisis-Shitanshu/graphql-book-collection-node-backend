@@ -9,6 +9,8 @@
   "author": "Shitanshu",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.0"
   }
 }
