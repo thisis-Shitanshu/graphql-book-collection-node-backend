@@ -1,11 +1,15 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const schema = require('./schema/schema');
 const devkeys = require('./dev');
 
 const app = express();
+
+// allow cross-origin request.
+app.use(cors());
 
 // Connect to MongoDB Atlas
 mongoose.connect(`${devkeys["mongodb-atlas-string"]}`);
